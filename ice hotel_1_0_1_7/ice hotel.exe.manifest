@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ice hotel.exe" version="1.0.1.7" publicKeyToken="b37cf3c09b6aa3ae" language="en-US" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ice hotel" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ice hotel.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.8.3.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SqlServerCe" version="4.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ice hotel.exe" size="34215936">
+      <assemblyIdentity name="ice hotel" version="1.0.1.7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y+BGFHGaO0iGBskwF36Oy6ewEi2PsYy4Jm+bHB4IiLI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="cr_sw.ico" size="118202">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qBwqcnnijdUOUGoRQz1RcWgZVp+PHyJNrECrCvFMdQM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon.ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>14kjmJRhJS/dk2SGfAKj5eXI0CUwUoZ7CVttuNqsMTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ice hotel.exe.config" size="1632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LcOe/IXNYR0IOSiVWm7fBag7zdcnN48OsrZZih/yu2A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\fridge.png" size="8045">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WIuJoYYixrlL6qPmNm/jLOgHmHkVCFclYhbaYCZ9DjE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Morpheus-PC\Morpheus" issuerKeyHash="00e5b79adfad61671af4aa72f7300081426a3ae2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>32D6DslePrf7/3kTsyRLPVPQF658wvEwNEuRTX45YRg=</DigestValue></Reference></SignedInfo><SignatureValue>KGsVX1JOsgfktaXWvLjZ34nPSHB5Dq1pBRukZ/ImM3nq7fRI+MP7xHlcs2PDzq/H0KGLxlr+hPwgy5L/3Ej+T0G4XZGVdqyaUgxf/Cvahab6pQpJh2dKXQyqB4IHfSluyYPvJDLZg0vyDopV18E8MxusbdZLPko9BUFcOMPoOrM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qg7xQ023jpwHrm+n1Rjl9lzdP632jY68sLvUBnbmSd/+JnzS2LTKDtBZ3u2Xde5knxznDCZsWd3sf/Vn5y8K0xZzfHJj9iQOiVhiVsx1sKwoGf8peLKLvppJm5caW1ja9DenDJJ+lZUawp1cs0BixKzPJlNLAMl56s5lNKrHZYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1861397e4d914b3430f1c27cae17d0533d4b24b31379fffbb73e5ec90efa60df" Description="" Url=""><as:assemblyIdentity name="ice hotel.exe" version="1.0.1.7" publicKeyToken="b37cf3c09b6aa3ae" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Morpheus-PC\Morpheus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EB/UfwBlWjalTtxiHuI5VZNS76JVindStuQr893jRZM=</DigestValue></Reference></SignedInfo><SignatureValue>fwGhco98rIKy71J0HIOmTWmbxo0IDHbG2/kfITZEBcjtqEbD451v9xsZlaVvC8OFvwmva3qWGtxJ36FdfHc7xZH8GHG4Qac1rQYlCkwnjU+gOd28kdktkKiZhXVyEOHKiATJAnTvrM4EzJh0W7tv7FYHeDLPhz3OufYiRb+iiAU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qg7xQ023jpwHrm+n1Rjl9lzdP632jY68sLvUBnbmSd/+JnzS2LTKDtBZ3u2Xde5knxznDCZsWd3sf/Vn5y8K0xZzfHJj9iQOiVhiVsx1sKwoGf8peLKLvppJm5caW1ja9DenDJJ+lZUawp1cs0BixKzPJlNLAMl56s5lNKrHZYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQdW2FwlBnUpZGP1DmBJG8HTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATQBvAHIAcABoAGUAdQBzAC0AUABDAFwATQBvAHIAcABoAGUAdQBzMB4XDTE0MDkwMzE2MDk0OFoXDTE1MDkwMzIyMDk0OFowMzExMC8GA1UEAx4oAE0AbwByAHAAaABlAHUAcwAtAFAAQwBcAE0AbwByAHAAaABlAHUAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqg7xQ023jpwHrm+n1Rjl9lzdP632jY68sLvUBnbmSd/+JnzS2LTKDtBZ3u2Xde5knxznDCZsWd3sf/Vn5y8K0xZzfHJj9iQOiVhiVsx1sKwoGf8peLKLvppJm5caW1ja9DenDJJ+lZUawp1cs0BixKzPJlNLAMl56s5lNKrHZYUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAvPhAR3V4IM5rViSvlZP9ylj5EinDvBgsiQ1rqX3742Zzq3A0I1Mp3clsh5053n884WBtlf1dFYOffRjld9UxWvkiQ0qEsjjOiF+bcODVGieIYnEKxFpwvOBR5l22Ql42jlhgkDrCIkj8y8pgYRR4NHZ2YbtCUMcdoanMA7GMlZA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

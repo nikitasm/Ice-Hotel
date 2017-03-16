@@ -1,0 +1,58 @@
+Public Class FormMap
+
+    Private Sub ButtonBack_Click(sender As Object, e As EventArgs) Handles ButtonBack.Click
+        FormMainMenu.Show()
+        Me.Hide()
+
+    End Sub
+
+    Private Sub ButtonBackS_Click(sender As Object, e As EventArgs) Handles ButtonBackS.Click
+        FormStaff.Show()
+        Me.Hide()
+
+    End Sub
+
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBoxicehotelPro.Show()
+
+    End Sub
+
+
+
+
+
+    Private Sub ExitControlerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitControlerToolStripMenuItem.Click
+        Me.Hide()
+
+    End Sub
+
+
+
+    Private Sub ContactToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContactToolStripMenuItem.Click
+        FormContact.ButtonBackC2.Enabled = True
+        FormContact.ButtonBackC2.BringToFront()
+        FormContact.ButtonBackC.Enabled = False
+        FormContact.ButtonBackC.SendToBack()
+        FormContact.Show()
+    End Sub
+
+
+    Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
+        FormLogIn.TextBox2.UseSystemPasswordChar = False
+        FormLogIn.TextBox1.ForeColor = Color.DimGray
+        FormLogIn.TextBox1.ForeColor = Color.DimGray
+        FormLogIn.TextBox1.Text = "Usename"
+        FormLogIn.TextBox2.Text = "Password"
+        FormLogIn.TextBox2.UseSystemPasswordChar = True
+        FormLogIn.TextBoxT.Text = ""
+        FormMainMenu.TextBoxName.Text = ""
+        FormLogIn.Refresh()
+        FormLogIn.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        Help.ShowHelp(Me, HelpProvider1.HelpNamespace, HelpNavigator.TableOfContents)
+    End Sub
+End Class

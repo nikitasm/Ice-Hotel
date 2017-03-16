@@ -1,0 +1,91 @@
+Public Class FormMyArtRoom
+
+    Dim down = False
+
+   
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+    Dim a = 3
+    Dim MyBrush = Brushes.Black
+
+
+    Private Sub PictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
+        If down = True Then
+            PictureBox1.CreateGraphics.FillEllipse(MyBrush, e.X, e.Y, a, a)
+
+        End If
+    End Sub
+
+    Private Sub PictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
+        down = True
+    End Sub
+
+    Private Sub PictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
+        down = False
+
+    End Sub
+
+   
+    Private Sub SaveFileDialog1_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs)
+
+       
+        DialogResult = SaveFileDialog1.ShowDialog()
+        If DialogResult = Windows.Forms.DialogResult.OK Then
+            PictureBox1.Image.Save(SaveFileDialog1.FileName)
+
+        ElseIf DialogResult = Windows.Forms.DialogResult.Cancel Then
+
+        End If
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Refresh()
+    End Sub
+
+    
+  
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        MyBrush = Brushes.Yellow
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        MyBrush = Brushes.Orange
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        MyBrush = Brushes.Red
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        MyBrush = Brushes.Green
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        MyBrush = Brushes.LightBlue
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        MyBrush = Brushes.Blue
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        MyBrush = Brushes.BlueViolet
+    End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        MyBrush = Brushes.Black
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        MyBrush = Brushes.White
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        SaveFileDialog1.ShowDialog()
+    End Sub
+
+    
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
+        a = NumericUpDown1.Value
+    End Sub
+End Class
